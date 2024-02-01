@@ -12,6 +12,7 @@ const Link = styled.a`
 
 function Desktop() {
   const { applications, activeWindows, openWindow } = useContext(WindowContext);
+  console.log("ACTIVE WINDOWS: ", activeWindows)
 
   return (
     <div className="desktop-container" style={{backgroundImage: `url('https://i.imgur.com/kuP2GlT.jpeg')`,
