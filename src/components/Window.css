@@ -2,7 +2,30 @@
     overflow-y: auto;
     max-width: 100vw;
     max-height: 100vh;
+    padding: 10px;
   }
+
+.frame-container img {
+  width: 200px;
+  display: block;
+  margin: auto;
+}
+
+#me {
+  display: 'flex'; 
+  justify-content: center;
+}
+
+.carousel {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.carousel img{
+  border: 1px solid;
+}
+
   
   .explorer-container {
     display: flex;
