@@ -6,3 +6,39 @@
 .desktop {
 padding: 15px;
 }
+
+.icon-holder {
+    width: 50px;
+    margin-bottom: 15px;
+    align-content: center;
+}
+
+.icon-holder svg {
+    margin-left: 5px;
+    width: 45px;
+    height: 45px;
+}
+
+.icon-text-holder {
+    text-align: center;
+    font-size: 0.8rem;
+    color: white;
+}
+
+.icon-and-text {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2px;
+}
+
+.icon-and-text img {
+    width: 30px;
+    height: 30px;
+    margin-left: -20px;
+    margin-right: 13px;
+}
+
+.icon-and-text #text {
+    display: flex;
+    align-items: center;
+}

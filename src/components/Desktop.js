@@ -5,19 +5,9 @@ import { TaskBar, List } from "@react95/core";
 import "./Desktop.css";
 import styled from 'styled-components'
 
-const StyledItem = styled.div`
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	flex-direction: column;
-	text-align: center;
-	width: 25%;
-	padding: 10px 0;
-`;
-
-const StyledSpan = styled.span`
-	margin-top: 5px;
-  color: white;
+const Link = styled.a`
+    text-decoration: none;
+    color: inherit;
 `
 
 function Desktop() {
@@ -30,25 +20,40 @@ function Desktop() {
       <div className="desktop">
         {applications.map((application, index) => {
           return (
-            <div
+            <div className="icon-holder"
               key={index}
               onClick={() => openWindow(application)}
             >
-                <StyledItem>
-                    {application.icon}
-                    <StyledSpan>{application.title}</StyledSpan>
-                </StyledItem>
+              <div className="icon-image-holder">
+                {application.icon}
+              </div>
+                <p className="icon-text-holder">{application.title}</p>
             </div>
           );
         })}
-        {activeWindows &&
+      </div>
+      {activeWindows &&
           activeWindows.map((application, index) => {
             return <Window key={index} selectedWindow={application} />;
           })}
-      </div>
       <TaskBar
         list={
           <List>
+            <Link href={"https://github.com/fruitptr"} target="_blank">
+            <List.Item>
+                <div className="icon-and-text">
+                  <img src="https://static-00.iconduck.com/assets.00/github-icon-512x512-iv3lcppz.png" alt="GitHub Logo"></img><div id="text">GitHub</div>
+                </div>
+            </List.Item>
+            </Link>
+            <Link href={"https://www.linkedin.com/in/muhammadshaheerahmad/"} target="_blank">
+            <List.Item>
+                <div className="icon-and-text">
+                  <img src="https://cdn.icon-icons.com/icons2/2873/PNG/512/linkedin_pixel_logo_icon_181925.png" alt="LinkedIn Logo"></img><div id="text">LinkedIn</div>
+                </div>
+            </List.Item>
+            </Link>
+            <List.Divider />
             {applications.map((application, index) => {
               return (
                 <List.Item
