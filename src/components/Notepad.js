@@ -39,7 +39,7 @@ function Notepad({ content }) {
         </Button></StyledButton>
         <div className="image-card">
           <img src={images[imageIndex]["src"]} alt=""></img>
-          <p>{images[imageIndex]["alt"]}</p>
+          <p id="bold-p">{images[imageIndex]["alt"]}</p>
         </div>
         <StyledButton><Button onClick={handleNextClick}>{"⮚"}
         </Button></StyledButton>

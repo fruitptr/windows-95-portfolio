@@ -33,7 +33,10 @@ const FruitClassifier = {
         content: [
           "Fruit Classifier is a web-based application that uses a Support Vector Machine (SVM) model to classify images of fruits. The model was trained on a dataset of 4 types of fruits; Banana, Coconut, Pineapple, Peach. The application allows users to upload images of fruits, and generates a cocktail recipe from the upoloaded fruit images",
           "Features:",
-          "\u2022 Machine Learning Process: Users are guided through the whole process of Exploratory Data Analysis, Preprocessing and Training.\n \u2022 Multiple Fruits: User can upload multiple images, allowing batch processing of the images. \n \u2022 Background Removal: If the user uploads an image with a background, the application removes the background and only keeps the fruit. \n \u2022 Cocktail Recipe: After the classification, the application generates a cocktail recipe from the fruits.",
+          "\u2022 Machine Learning Process: Users are guided through the whole process of Exploratory Data Analysis, Preprocessing and Training.",
+          "\u2022 Multiple Fruits: User can upload multiple images, allowing batch processing of the images.",
+          "\u2022 Background Removal: If the user uploads an image with a background, the application removes the background and only keeps the fruit.",
+          "\u2022 Cocktail Recipe: After the classification, the application generates a cocktail recipe from the fruits.",
           "Website: ",
           "GitHub repository: ",
         ],
@@ -42,7 +45,7 @@ const FruitClassifier = {
         contentType: "image",
         content: [
             {
-                src: "../assets/images/fruits-classifier.png",
+                src: "https://i.imgur.com/Txdks1T.png",
                 alt: "Fruit Classifier Image",
             },
         ],

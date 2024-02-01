@@ -18,7 +18,7 @@ export default function Window({ selectedWindow }) {
     switch (selectedWindow.type) {
         case "notepad":
             return <Notepad content={selectedWindow.content} />;
-        case "fruits-classifier":
+        case "fruit-classifier":
             return <FruitsClassifierFile content={selectedWindow.content} />;
         case "wurdle":
             return <WurdleFile content={selectedWindow.content} />;
