@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import { GlobalStyle, ThemeProvider } from '@react95/core';
+import { createGlobalStyle } from 'styled-components';
+import DataService from './services/dataService';
+import DataContext from './contexts/dataContext';
+import AppWindow from './components/AppWindow';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const dataService = new DataService();
 
+const BodyFontSizeOverride = createGlobalStyle`
+  body{
+    font-size: 12px
+  }
+`;
+
+const App = () => (
+  <DataContext.Provider value={dataService}>
+    <ThemeProvider>
+        <GlobalStyle />
+        <BodyFontSizeOverride />
+        <AppWindow />
+    </ThemeProvider>
+  </DataContext.Provider>
+);
 export default App;
