@@ -33,7 +33,9 @@ const Wurdle = {
         content: [
           "Wurdle is a web-based word-guessing game inspired by the popular game Wordle. In Wurdle, players aim to guess a hidden 5-letter word within 5 attempts. The game features a newspaper-like user interface, creating an immersive environment with accompanying news stories.",
           "Features:",
-          "\u2022 Word Guessing: Players attempt to guess a 5-letter word within 5 tries.\n \u2022 Newspaper UI: Wurdle's unique interface resembles a newspaper, enhancing the gaming experience with a touch of storytelling. \n \u2022 Immersive News Stories: The application includes fictional news stories to add depth and context, making the gameplay more engaging.",
+          "\u2022 Word Guessing: Players attempt to guess a 5-letter word within 5 tries.",
+          "\u2022 Newspaper UI: Wurdle's unique interface resembles a newspaper, enhancing the gaming experience with a touch of storytelling.",
+          "\u2022 Immersive News Stories: The application includes fictional news stories to add depth and context, making the gameplay more engaging.",
           "Website: ",
           "GitHub repository: ",
         ],
@@ -42,7 +44,7 @@ const Wurdle = {
         contentType: "image",
         content: [
             {
-                src: "../assets/images/wurdle-image.png",
+                src: "https://i.imgur.com/2txYRsg.png",
                 alt: "Wurdle Image",
             },
         ],
