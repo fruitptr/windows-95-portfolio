@@ -61,7 +61,7 @@ export default function Window({ selectedWindow }) {
     ];
   };
 
-  const resumeURL = '../assets/resume.pdf';
+  const resumeURL = 'https://raw.githubusercontent.com/fruitptr/windows-95-portfolio/main/src/assets/resume.pdf';
 
   const handleDownloadResume = () => {
     const downloadLink = document.createElement('a');
