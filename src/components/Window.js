@@ -4,6 +4,7 @@ import { Modal, List } from "@react95/core";
 import Notepad from "./Notepad";
 import FruitsClassifierFile from "./FruitsClassifierFile";
 import WurdleFile from "./WurdleFile";
+import Explorer from "./Explorer";
 
 export default function Window({ selectedWindow }) {
   const { closeWindow } = useContext(WindowContext);
@@ -17,10 +18,16 @@ export default function Window({ selectedWindow }) {
   const typeSelector = () => {
     switch (selectedWindow.type) {
         case "notepad":
+          console.log("Selected window: ", selectedWindow.content)
             return <Notepad content={selectedWindow.content} />;
+        case "explorer":
+          console.log("Selected window: ", selectedWindow.content)
+          return <Explorer content={selectedWindow.content} />;
         case "fruit-classifier":
+          console.log("Selected window: ", selectedWindow.content)
             return <FruitsClassifierFile content={selectedWindow.content} />;
         case "wurdle":
+          console.log("Selected window: ", selectedWindow.content)
             return <WurdleFile content={selectedWindow.content} />;
       default:
         return console.log("Error: Window type not found.");
