@@ -1,11 +1,7 @@
-import React, {useState} from 'react';
-import { GlobalStyle, ThemeProvider } from '@react95/core';
+import { GlobalStyle, ThemeProvider } from "@react95/core";
+import Desktop from "./components/Desktop";
+import { WindowProvider } from "./contexts/WindowContext";
 import { createGlobalStyle } from 'styled-components';
-import DataService from './services/dataService';
-import DataContext from './contexts/dataContext';
-import AppWindow from './components/AppWindow';
-
-const dataService = new DataService();
 
 const BodyFontSizeOverride = createGlobalStyle`
   body{
@@ -13,13 +9,16 @@ const BodyFontSizeOverride = createGlobalStyle`
   }
 `;
 
-const App = () => (
-  <DataContext.Provider value={dataService}>
-    <ThemeProvider>
+function App() {
+  return (
+    <WindowProvider>
+      <ThemeProvider theme={"coldGray"}>
         <GlobalStyle />
         <BodyFontSizeOverride />
-        <AppWindow />
-    </ThemeProvider>
-  </DataContext.Provider>
-);
+        <Desktop />
+      </ThemeProvider>
+    </WindowProvider>
+  );
+}
+
 export default App;

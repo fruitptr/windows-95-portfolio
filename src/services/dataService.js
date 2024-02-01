@@ -69,7 +69,7 @@ export default class DataService {
                     contacts: [
                         {
                             name: "LinkedIn",
-                            link: "mailtohttps://www.linkedin.com/in/muhammadshaheerahmad/",
+                            link: "https://www.linkedin.com/in/muhammadshaheerahmad/",
                             icon: "./assets/icons/linkedin.png",
                         },
                         {
