@@ -5,6 +5,8 @@ import Notepad from "./Notepad";
 import FruitsClassifierFile from "./FruitsClassifierFile";
 import WurdleFile from "./WurdleFile";
 import Explorer from "./Explorer";
+import ImageFile from "./ImageFile";
+import ResumeFile from "./ResumeFile";
 
 export default function Window({ selectedWindow }) {
   const { closeWindow } = useContext(WindowContext);
@@ -29,6 +31,10 @@ export default function Window({ selectedWindow }) {
         case "wurdle":
           console.log("Selected window: ", selectedWindow.content)
             return <WurdleFile content={selectedWindow.content} />;
+        case "image":
+          return <ImageFile content={selectedWindow.content} />;
+        case "resume":
+          return <ResumeFile content={selectedWindow.content} />;
       default:
         return console.log("Error: Window type not found.");
     }
@@ -55,6 +61,17 @@ export default function Window({ selectedWindow }) {
     ];
   };
 
+  const resumeURL = '../assets/resume.pdf';
+
+  const handleDownloadResume = () => {
+    const downloadLink = document.createElement('a');
+    downloadLink.href = resumeURL;
+    downloadLink.download = 'resume.pdf';
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
+  };
+
   return (
     <Modal
       title={selectedWindow.title}
@@ -66,9 +83,16 @@ export default function Window({ selectedWindow }) {
         maxWidth: "100%",
         maxHeight: "100%",
       }}
-      buttons={[{ value: "Close", onClick: handleCloseWindow }]}
+      buttons={[
+        { value: "Close", onClick: handleCloseWindow },
+        selectedWindow.id === "resume" && {
+          value: "Download",
+          onClick: handleDownloadResume,
+        },
+      ].filter(Boolean)}
     >
       {typeSelector()}
     </Modal>
+
   );
 }

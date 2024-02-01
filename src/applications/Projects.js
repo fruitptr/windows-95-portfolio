@@ -7,6 +7,8 @@ const Projects = {
     description: "A collection of Projects",
     icon: <Folder variant="32x32_4"/>,
     content: [
+        "wurdle",
+        "fruit-classifier",
     ],
   };
   
