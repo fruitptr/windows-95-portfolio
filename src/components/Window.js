@@ -66,7 +66,7 @@ export default function Window({ selectedWindow }) {
   const handleDownloadResume = () => {
     const downloadLink = document.createElement('a');
     downloadLink.href = resumeURL;
-    downloadLink.download = 'resume.pdf';
+    downloadLink.download = 'Shaheer_Ahmad.pdf';
     document.body.appendChild(downloadLink);
     downloadLink.click();
     document.body.removeChild(downloadLink);
