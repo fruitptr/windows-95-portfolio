@@ -18,7 +18,7 @@ const FruitClassifier = {
       },
       {
         name: "Email",
-        link: "shaheerahmaddev@gmail.com",
+        link: "mailto:shaheerahmaddev@gmail.com",
         icon: "./assets/icons/gmail.png",
       },
     ],
