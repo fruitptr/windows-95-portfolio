@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Portfolio Website - Windows 95 Theme
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to my portfolio website! This nostalgic journey will take you back to the iconic Windows 95 era while showcasing my projects, providing GitHub links, and offering insights into who I am.
 
-## Available Scripts
+![alt text](https://github.com/fruitptr/windows-95-portfolio/blob/main/public/web-page.jpg?raw=true)
 
-In the project directory, you can run:
+## Table of Contents
+- [Demo](#demo)
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [Project Showcase](#project-showcase)
+- [About Me](#about-me)
+- [Resume](#resume)
+- [Installation](#installation)
+- [Usage](#usage)
 
-### `npm start`
+## Demo
+Check out the live demo of the portfolio website at [https://www.shaheerahmad.tech](https://www.shaheerahmad.tech).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
+- [React95](https://www.shaheerahmad.tech): A Windows 95 style UI components library for React.
+- [@uidotdev/usehooks](https://github.com/uidotdev/usehooks): A collection of React hooks for common use-cases.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
+- Authentic Windows 95 theme for a nostalgic user experience.
+- Project showcase with GitHub links and project websites.
+- Personal information and a brief description about me.
+- Downloadable resume for more detailed information.
 
-### `npm test`
+## Project Showcase
+Explore my projects and their GitHub repositories:
+1. **Wurdle**
+   - GitHub: [Wurdle](https://github.com/fruitptr/windows-95-portfolio)
+   - Website: [https://wurdle-u88k.onrender.com/](https://wurdle-u88k.onrender.com/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **SVM Fruits Classifier**
+   - GitHub: [SVM Fruits Classifier](https://wurdle-u88k.onrender.com/)
+   - Website: [cocktailrecipegenerator.streamlit.app/](cocktailrecipegenerator.streamlit.app/)
 
-### `npm run build`
+## About Me
+Learn more about me and my journey in the tech world. Feel free to connect and reach out.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Resume
+Download my resume [here](https://raw.githubusercontent.com/fruitptr/windows-95-portfolio/main/src/assets/resume.pdf) to get a comprehensive overview of my skills and experiences.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Installation
+To run this website locally, follow these steps:
+1. Clone the repository: `git clone https://github.com/fruitptr/windows-95-portfolio.git`
+2. Install dependencies: `npm install`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Usage
+1. Start the development server: `npm start`
+2. Open your browser and navigate to `http://localhost:3000`
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thank you for visiting my Windows 95-themed portfolio! Feel free to explore, and don't hesitate to contact me for any inquiries or collaboration opportunities.
