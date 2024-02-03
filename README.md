@@ -2,7 +2,7 @@
 
 Welcome to my portfolio website! This nostalgic journey will take you back to the iconic Windows 95 era while showcasing my projects, providing GitHub links, and offering insights into who I am.
 
-![alt text](https://github.com/fruitptr/windows-95-portfolio/blob/main/public/web-page.jpg?raw=true)
+![alt text](https://github.com/fruitptr/windows-95-portfolio/blob/main/public/web-page.png?raw=true)
 
 ## Table of Contents
 - [Demo](#demo)
