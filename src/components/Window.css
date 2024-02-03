@@ -36,7 +36,7 @@
 
 .frame-container-folder {
   overflow-y: auto;
-  max-width: 30vw;
+  width: 30vw;
   max-height: 50vh;
   padding: 10px;
   background-image: url("https://w0.peakpx.com/wallpaper/1021/823/HD-wallpaper-pastel-ombre-gradient-purple-light-solid-pink-led-white-gray-red.jpg");
@@ -56,6 +56,16 @@
   margin: 10px;
   text-align: center;
 }
+
+@media (max-width: 768px) {
+  .explorer-item {
+    flex: 0 0 calc(50% - 20px);
+  }
+}
+
+
+
+
 
 #bold-p
 {
