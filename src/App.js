@@ -1,7 +1,9 @@
 import { GlobalStyle, ThemeProvider } from "@react95/core";
 import Desktop from "./components/Desktop";
+import Screensaver from "./components/Screensaver";
 import { WindowProvider } from "./contexts/WindowContext";
 import { createGlobalStyle } from 'styled-components';
+import { useIdle } from "@uidotdev/usehooks";
 
 const BodyFontSizeOverride = createGlobalStyle`
   body{
@@ -10,12 +12,13 @@ const BodyFontSizeOverride = createGlobalStyle`
 `;
 
 function App() {
+  const idle = useIdle(15000);
   return (
     <WindowProvider>
       <ThemeProvider theme={"coldGray"}>
         <GlobalStyle />
         <BodyFontSizeOverride />
-        <Desktop />
+        {idle ? <Screensaver/> : <Desktop />}
       </ThemeProvider>
     </WindowProvider>
   );
