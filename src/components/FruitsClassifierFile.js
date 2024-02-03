@@ -4,10 +4,10 @@ import "./Window.css";
 function FruitsClassifierFile({ content }) {
 
   return (
-    <Frame bg="white" boxShadow="in" className="frame-container-project">
+    <Frame bg="white" boxShadow="in" className="frame-container">
       <div id="me">
       <h1 style={{ textAlign: "center" }}>{content[0]["content"]}</h1>
-      <a href={content[3]["content"][0]}><img src={content[2]["content"][0]["src"]} alt="Me."></img></a></div>
+      <a href={content[3]["content"][0]}><img id="project-image" src={content[2]["content"][0]["src"]} alt="Me."></img></a></div>
       <p>{content[1]["content"][0]}</p>
       <p id="bold-p">{content[1]["content"][1]}</p>
       <p>{content[1]["content"][2]}</p>
